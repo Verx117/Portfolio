@@ -1,0 +1,12 @@
+import type { FC, SVGProps } from "react";
+
+const Html: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <svg viewBox="0 0 14 16" fill="none" {...props}>
+    <path
+      d="M0.5 0L1.68286 14.4004L6.99221 16L12.3151 14.3982L13.5 0H0.5ZM10.9271 4.71429H4.69792L4.83333 6.53571H10.7917L10.3343 11.9425L7 12.9457L3.65927 11.9457L3.42974 9.17857H5.06354L5.17932 10.5818L7 11.1096L8.80849 10.5768L8.9974 8.28572H3.34375L2.91753 2.94321H11.0693L10.9271 4.71429Z"
+      fill="#F8562B"
+    />
+  </svg>
+);
+
+export default Html;

@@ -1,0 +1,156 @@
+---
+import { Header } from "@components/.";
+import Particles from "./Particles";
+import { Github, Linkedin, React, Tailwind, Javascript, Typescript, Html, Css, VsCode, Arrow, Chevron } from "@icons/.";
+import { heroImage } from "@images/."
+import { Image } from "astro:assets"
+---
+
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+	</head>
+	<body class="h-screen w-full">
+    <div class="relative flex min-h-full w-full flex-col items-center space-y-6 bg-dark-black p-8 pt-6 text-white">
+      <Header />
+      <main class="flex w-full flex-1 flex-col space-y-8 max-w-screen-lg">
+        <div class="h-auto w-full flex-none space-y-8 lg:flex lg:min-h-[464px] lg:space-x-8 lg:space-y-0 tall:h-auto tall:flex-1">
+          <div class="relative min-h-[464px] w-full rounded-[30px] lg:h-auto lg:w-2/3 overflow-hidden">
+            <div class="absolute left-0 top-0 size-[494px] -translate-x-1/2 -translate-y-1/2 mix-blend-exclusion" style={{
+              backgroundImage: "radial-gradient(50% 50% at 50% 50%, #2398C9 0%, rgba(0, 0, 0, 0) 100%)"
+            }}/>
+            <div class="absolute right-0 bottom-0 size-[344px] translate-y-1/2 translate-x-[40%] mix-blend-exclusion lg:size-[1237px] lg:translate-y-2/3" style={{
+              backgroundImage: "radial-gradient(50% 50% at 50% 50%, #2398C9 0%, rgba(0, 0, 0, 0) 100%)"
+            }}/>
+            <div class="absolute right-0 bottom-0 size-[326px] translate-y-2/6 translate-x-1/3 mix-blend-exclusion lg:size-[1176px] lg:translate-y-1/4 lg:translate-x-1/2" style={{
+              backgroundImage: "radial-gradient(50% 50% at 50% 50%, rgba(211, 184, 112, 0.5) 0%, rgba(0, 0, 0, 0) 100%)"
+            }}/>
+            <div class="absolute left-0 top-0 size-full opacity-90 blur-3xl" style={{
+              backgroundImage:
+                "linear-gradient(280.2deg, #1F2432 0%, #131721 100%)"
+              }}/>
+            <Particles client:load />
+            <div class="flex flex-col z-10 relative size-full p-8 space-y-8 lg:p-10 lg:justify-between">
+            <div class="flex flex-col space-y-2"><h1 class="text-4xl lg:text-6xl">
+              Hello,
+              <span class="xl:leading-[77px] block">
+                I'm <span class="font-extrabold">Jacopo</span>
+              </span>
+            </h1>
+            <h2>
+              <span class="font-extrabold lg:text-2xl">Front-End Web</span>
+              Developer
+            </h2></div>
+            <p class="text-xs font-light leading-6 lg:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              facilisis odio ut sapien ullamcorper molestie. Donec sed bibendum
+              lacus. Suspendisse mollis pellentesque pharetra. Duis at semper dui.
+            </p>
+            <div class="flex w-full flex-col items-center space-y-8 lg:flex-row lg:items-center lg:space-y-0 lg:space-x-6">
+              <button class="h-12 w-full rounded-[100px] bg-accent px-8 text-black lg:w-[154px] font-bold">
+                Contact me
+              </button>
+              <div class="flex items-center justify-center space-x-4">
+                <button class="flex size-12 items-center justify-center rounded-full bg-white text-black">
+                  <Github className="size-6 fill-black" />
+                </button>
+                <button class="flex size-12 items-center justify-center rounded-full bg-white text-black">
+                  <Linkedin className="size-6 fill-black" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="min-h-[300px] w-full overflow-hidden rounded-[30px] lg:h-auto lg:w-1/3 bg-black">
+             <Image src={heroImage} alt="" role="presentation" decoding="async" loading="lazy" class="size-full object-cover">
+          </div>
+        </div>
+        <div class="h-auto w-full flex-none space-y-8 lg:flex lg:min-h-[464px] lg:space-x-8 lg:space-y-0 tall:h-auto tall:flex-1">
+          <div class="min-h-[300px] w-full overflow-hidden rounded-[30px] lg:h-auto lg:w-1/3 p-8 bg-black font-semibold space-y-2 lg:space-y-6">
+            <h2 class="text-xl md:text-2xl">Technical Skills</h2>
+            <div class="flex flex-col space-y-2 lg:space-y-6">
+              <h3 class="text-sm md:text-base text-light-gray">Code</h3>
+              <ul class="flex flex-wrap gap-2">
+                <li class="flex-1 h-11 bg-dark-black rounded-md p-2 flex items-center space-x-2">
+                  <div class="flex h-full w-7 bg-[#61DAFB] bg-opacity-20 rounded-md justify-center items-center">
+                    <React className="size-4"/>
+                  </div>
+                  <p class="font-semibold text-xs">React</p>
+                </li>
+                <li class="flex-1 h-11 bg-dark-black rounded-md p-2 flex items-center space-x-2">
+                  <div class="flex h-full w-7 bg-[#3A8DE9] bg-opacity-20 rounded-md justify-center items-center">
+                    <Typescript className="size-4"/>
+                  </div>
+                  <p class="font-semibold text-xs">Typescript</p>
+                </li>
+                <li class="flex-1 h-11 bg-dark-black rounded-md p-2 flex items-center space-x-2">
+                  <div class="flex h-full w-7 bg-[#F0DB4F] bg-opacity-20 rounded-md justify-center items-center">
+                    <Javascript className="size-4"/>
+                  </div>
+                  <p class="font-semibold text-xs">Javascript</p>
+                </li>
+                <li class="flex-1 h-11 bg-dark-black rounded-md p-2 flex items-center space-x-2">
+                  <div class="flex h-full w-7 bg-[#47ACB3] bg-opacity-20 rounded-md justify-center items-center">
+                    <Tailwind className="size-4"/>
+                  </div>
+                  <p class="font-semibold text-xs">Tailwind</p>
+                </li>
+                <li class="flex-1 h-11 bg-dark-black rounded-md p-2 flex items-center space-x-2">
+                  <div class="flex h-full w-7 bg-[#F8562B] bg-opacity-20 rounded-md justify-center items-center">
+                    <Html className="size-4"/>
+                  </div>
+                  <p class="font-semibold text-xs">HTML</p>
+                </li>
+                <li class="flex-1 h-11 bg-dark-black rounded-md p-2 flex items-center space-x-2">
+                  <div class="flex h-full w-7 bg-[#2C67FF] bg-opacity-20 rounded-md justify-center items-center">
+                    <Css className="size-4"/>
+                  </div>
+                  <p class="font-semibold text-xs">CSS</p>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col space-y-2 lg:space-y-6">
+              <h3 class="text-sm md:text-base text-light-gray">Tools</h3>
+              <ul class="flex flex-wrap gap-2">
+                <li class="flex-1 h-11 bg-dark-black rounded-md p-2 flex items-center space-x-2">
+                  <div class="flex h-full w-7 bg-[#007ACC] bg-opacity-20 rounded-md justify-center items-center">
+                    <VsCode className="size-10"/>
+                  </div>
+                  <p class="font-semibold text-xs">VS Code</p>
+                </li>
+                <li class="flex-1 h-11 bg-dark-black rounded-md p-2 flex items-center space-x-2">
+                  <div class="flex h-full w-7 bg-white bg-opacity-20 rounded-md justify-center items-center">
+                    <Github className="size-4 fill-white"/>
+                  </div>
+                  <p class="font-semibold text-xs">GitHub</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="min-h-[464px] w-full overflow-hidden rounded-[30px] lg:h-auto lg:w-2/3 p-8 bg-black relative" style={{
+            backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0.8) 12%, rgba(0, 0, 0, 0) 100%)"
+          }}>
+            <div class="flex justify-between items-center font-semibold">
+              <div class="flex flex-col space-y-2">
+                <h2 class="text-xl lg:text-2xl">Project Title</h2>
+                <p class="text-sm lg:text-base">
+                  Very cute tiny project description
+                </p>
+              </div>
+              <button class="flex size-12 items-center justify-center rounded-full bg-white flex-shrink-0">
+                <Arrow className="h-3 w-3.5 fill-black" />
+              </button>
+            </div>
+            <Chevron className="h-7 w-4 fill-white absolute top-1/2 -translate-y-1/2 left-8" />
+            <Chevron className="h-7 w-4 rotate-180 fill-white absolute top-1/2 -translate-y-1/2 right-8" />
+          </div>
+        </div>
+      </main>
+    </div>
+	</body>
+</html>
