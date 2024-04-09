@@ -1,5 +1,5 @@
 ---
-import { Header } from "@components/.";
+import { Header, Projects } from "@components/.";
 import Particles from "./Particles";
 import { Github, Linkedin, React, Tailwind, Javascript, Typescript, Html, Css, VsCode, Arrow, Chevron } from "@icons/.";
 import { heroImage } from "@images/."
@@ -132,22 +132,8 @@ import { Image } from "astro:assets"
               </ul>
             </div>
           </div>
-          <div class="min-h-[464px] w-full overflow-hidden rounded-[30px] lg:h-auto lg:w-2/3 p-8 bg-black relative" style={{
-            backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0.8) 12%, rgba(0, 0, 0, 0) 100%)"
-          }}>
-            <div class="flex justify-between items-center font-semibold">
-              <div class="flex flex-col space-y-2">
-                <h2 class="text-xl lg:text-2xl">Project Title</h2>
-                <p class="text-sm lg:text-base">
-                  Very cute tiny project description
-                </p>
-              </div>
-              <button class="flex size-12 items-center justify-center rounded-full bg-white flex-shrink-0">
-                <Arrow className="h-3 w-3.5 fill-black" />
-              </button>
-            </div>
-            <Chevron className="h-7 w-4 fill-white absolute top-1/2 -translate-y-1/2 left-8" />
-            <Chevron className="h-7 w-4 rotate-180 fill-white absolute top-1/2 -translate-y-1/2 right-8" />
+          <div class="min-h-[464px] w-full overflow-hidden rounded-[30px] lg:h-auto lg:w-2/3 bg-black relative">
+          <Projects client:load />
           </div>
         </div>
       </main>
